@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS balancebot.local;
+
+USE balancebot.local;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    telegram_id BIGINT NOT NULL UNIQUE,
+    balance DECIMAL(10, 2) DEFAULT 0.00,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

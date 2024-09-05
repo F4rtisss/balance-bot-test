@@ -1,0 +1,5 @@
+.env
+vendor
+.osp
+logs
+.idea
